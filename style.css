@@ -1,0 +1,262 @@
+/* CSS Normalize */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+/* Nav bar */
+.main-head{
+    background-color: #131C29;
+    font-size: 1.8rem;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+   
+}
+.nav-container
+{
+   display: flex;
+   padding: 1.5rem;
+   align-items: center;
+   width: 90%;
+   background-color: #131C29;
+   z-index: 10;
+   margin: auto;
+}
+.nav-container .nav-links ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    font-family: 'Poppins', sans-serif;
+
+    flex-wrap: wrap;
+}
+.nav-links{
+    flex: 1 1 40rem;
+    
+}
+.nav-logo{
+    flex: 2 1 20rem;  
+    font-family: 'Pattaya', sans-serif; 
+    font-weight: normal;
+    
+}
+a{text-decoration: none; color: white;}
+.nav-container .nav-links ul li{
+    margin: 1.2rem;
+    margin-right: 1.2rem;
+    
+}
+/* start SHOWCASE */
+.showcase{
+    background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,0.2)),
+    url('img/pexels-gabriela-palai-395196.jpg') 
+    center  /cover;
+    height: 100vh;
+    font-size: 1.8rem;
+    color: white;
+    
+}
+.banner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-size: 2.5rem;
+}
+.banner h1,p{
+    margin-bottom: 6%;
+    font-weight: 600;
+}
+.btn{
+
+    background-color: #466C9D;
+    color: white;
+    border: none;
+    padding:1.8rem 6rem;
+    font-size: 2rem;
+}
+/* end SHOWCASE */
+/* start Locations  */
+
+#Locations{
+    min-height: 100vh;
+    background: linear-gradient(rgba(107, 107, 107, 0.7),rgba(0,0,0,0.1)),
+    url('/img/new-york-page.png') center center /cover;
+    position: relative;
+    overflow: hidden;
+}
+.cloud{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+
+}
+.head-Location{
+    font-size: 3rem;
+    height: 90vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+     margin-left: 10%;
+   
+
+}
+.head-Location h1{
+    margin-bottom: 3rem;
+    text-decoration: underline solid black;
+    font-weight: bold;
+}
+.head-Location p{
+
+font-weight:lighter ;
+color: black;
+
+}
+.cloud-1{
+    animation: animationCloud 2.8s infinite alternate ease-in-out;
+}
+
+.cloud-2{
+    top: 20%;
+    z-index: -1;
+    opacity: 0.5;
+    animation: animationCloud 3.5s infinite alternate ease-in-out;
+
+}
+
+@keyframes animationCloud
+{
+    from{
+        transform: translate(10%,-10%);
+    }
+    to{
+        transform: translate(0,0);
+    }
+}
+
+/* end Locations  */
+/* start benfits */
+.benfit-head {
+    background-color: #343C44;
+    color: white;
+    font-size: 3.8rem;
+    padding: 1.5rem;
+    text-align: center;
+    height: 28vh;
+   
+}
+.benfit-head p{
+    margin-top:2rem ;
+    font-size: 3rem;
+    font-weight: lighter;
+    
+}
+.cards{
+    margin: 10rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.cards .card
+{
+    font-size: 1.8rem;
+    max-width: 40rem;
+    text-align: center;
+    min-height: 20rem;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+    margin: 1.5rem;
+}
+.img-benfit{
+    background-color:  #27394E;
+    padding: 1.5rem;
+}
+.text-benfit-h{
+    margin-top: 1.5rem;
+}
+
+.card img{
+    background-color: #27394E;
+    max-width: 20rem;
+    max-height: 16rem;
+}
+
+/* end benfits */
+
+
+/* Start contact */
+
+#contact{
+    min-height: 100vh;
+    background: 
+    url('/img/two-person-carrying-black-inflatable-pool-float-on-brown-1020016.jpg') center center / cover;
+    position: relative;
+}
+/* end contact */
+
+.form-contact-container{
+    background-color: rgba(19, 28, 39,0.7);
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    border-radius:30px ;
+    padding-top:8rem ;
+    min-width: 70%;
+   
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.header-contact{
+    font-size: 4rem;
+    font-weight: 400;
+}
+.contact-form {
+    margin-top: 10rem;
+    max-height: 100%;
+}
+.contact-form .form-group{
+    margin-top: 4rem;
+}
+.contact-form .form-group input{
+    min-width: 30rem;
+    min-height: 4.5rem;
+}
+.btn-contact{
+    width: 100%;
+    margin-top: 10rem;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+footer {
+    color: white;
+    background: rgba(19, 28, 39, 1);
+  }
+  .footer-wrapper {
+    display: flex;
+    padding: 2rem;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    min-height: 10vh;
+    flex-wrap: wrap;
+  }
+  footer h5 {
+      font-size: 3rem;
+    flex: 1 1 40rem;
+  }
+  footer ul {
+    display: flex;
+    list-style: none;
+    flex: 1 1 40rem;
+    justify-content: space-between;
+    align-items: center;
+  }
